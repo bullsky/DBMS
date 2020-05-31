@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}
+    {{ title }} | {{ site_title|default:_('VBANK 虚拟银行') }}
+{% endblock %}
+{% block branding %}
+    <h1 id="site-name"><a href="{% url 'vbank:index' %}">VBANK 虚拟银行</a></h1>
+{% endblock %}
+{% block breadcrumbs %}
+    <div class="breadcrumbs">
+        <a href="{% url 'vbank:index' %}">欢迎！</a>
+        {% if title %} &rsaquo; {{ title }}{% endif %}
+    </div>
+{% endblock %}
+
+{% block content %}
+    <a href="/vbank/regist/">注册</a>
+    <a href="/vbank/login/">登陆</a>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "base_site.html" %}
+{% block breadcrumbs %}
+    <div class="breadcrumbs">
+        <a href="{% url 'vbank:home' %}">主页</a>
+        {% if title %} &rsaquo; {{ title }}{% endif %}>
+        <a href="/vbank/transfer/">转账</a>
+        {% if title %} &rsaquo; {{ title }}{% endif %}
+    </div>
+{% endblock %}
+{% block content %}
+    <h1>转账结果</h1>
+    {% if error %}
+        <h2>{{ error.error }}</h2>
+    {% else %}
+        <h2>转账成功！</h2>
+    {% endif %}
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base_site.html" %}
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+    <a href="{% url 'vbank:home' %}">主页</a>
+    {% if title %} &rsaquo; {{ title }}{% endif %}
+    </div>
+{% endblock %}
+{% block content %}
+    <a href="/vbank/balance/">查看账户信息</a>
+    <a href="/vbank/flow/">查看业务流水</a>
+{#    <a href="/vbank/bindcard/">绑定银行卡</a>#}
+    <a href="/vbank/unbindcard/">解绑银行卡</a>
+    <a href="/vbank/transfer/">转账</a>
+{% endblock %}

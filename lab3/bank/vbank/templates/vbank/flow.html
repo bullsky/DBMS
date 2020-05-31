@@ -1,0 +1,98 @@
+{% extends "base_site.html" %}
+<!-- DataTables CSS -->
+{% block responsive %}
+    <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.15/css/jquery.dataTables.css">
+
+    <link rel="stylesheet" type="text/css"
+          href="http://cdn.datatables.net/plug-ins/28e7751dbec/integration/bootstrap/3/dataTables.bootstrap.css">
+
+    <script type="text/javascript" charset="utf8"
+            src="http://cdn.datatables.net/plug-ins/28e7751dbec/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" charset="utf8" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+    <!-- DataTables -->
+    <script type="text/javascript" charset="utf8"
+            src="http://cdn.datatables.net/1.10.15/js/jquery.dataTables.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#table_id_example').DataTable({
+                "oLanguage": {
+                    "sLengthMenu": "每页显示 _MENU_ 条记录",
+                    "sZeroRecords": "抱歉， 没有找到",
+                    "sInfo": "从 _START_ 到 _END_ /共 _TOTAL_ 条数据",
+                    "sInfoEmpty": "没有数据",
+                    "sInfoFiltered": "(从 _MAX_ 条数据中检索)",
+                    "sSearch": "搜索",
+                    "oPaginate": {
+                        "sFirst": "首页",
+                        "sPrevious": "前一页",
+                        "sNext": "后一页",
+                        "sLast": "尾页"
+                    },
+                    "sZeroRecords": "没有检索到数据",
+                    "sProcessing": "<img src='./loading.gif' />"
+                }
+            });
+        });
+    </script>
+{% endblock %}
+{% block breadcrumbs %}
+    <div class="breadcrumbs">
+        <a href="{% url 'vbank:home' %}">主页</a>
+        {% if title %} &rsaquo; {{ title }}{% endif %}>
+        <a href="/vbank/flow/">业务流水</a>
+        {% if title %} &rsaquo; {{ title }}{% endif %}
+    </div>
+{% endblock %}
+{% block body %}
+    {% block content %}
+        <h1>业务流水</h1>
+        {% if flow_list %}
+            <table id="table_id_example" class="display">
+                <tr>
+                    <th>流水号</th>
+                    <th>时间</th>
+                    <th>源账户</th>
+                    <th>源银行卡</th>
+                    <th>币种</th>
+                    <th>转账金额</th>
+                    <th>业务类型</th>
+                    <th>目标账户</th>
+                    <th>目标银行卡</th>
+                </tr>
+                {% for flow in flow_list  %}
+                    <tr>
+                        <td>{{ flow.serial }}</td>
+                        <td>{{ flow.datetime }}</td>
+                        <td>{{ flow.s_account }}</td>
+                        <td>{{ flow.s_bankcard }}</td>
+                        <td>
+                            {{ flow.currency }}
+{#                            {% if flow.currency == 1 %}#}
+{#                                人民币#}
+{#                            {% elif flow.currency == 2 %}#}
+{#                                美元#}
+{#                            {% else %}#}
+{#                                欧元#}
+{#                            {% endif %}#}
+                        </td>
+                        <td>{{ flow.amount }}</td>
+                        <td>
+                            {{ flow.ftype }}
+{#                            {% if flow.type == 1 %}#}
+{#                                普通转账#}
+{#                            {% else %}#}
+{#                                交易转账#}
+{#                            {% endif %}#}
+                        </td>
+                        <td>{{ flow.d_account }}</td>
+                        <td>{{ flow.d_bankcard }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        {% else %}
+            <h1>没有流水记录</h1>
+        {% endif %}
+    {% endblock %}
+{% endblock %}

@@ -1,0 +1,146 @@
+addr:10000000
+elem1:34;elem2:4
+elem1:17;elem2:21
+elem1:15;elem2:623
+elem1:11;elem2:275
+elem1:6;elem2:409
+elem1:22;elem2:720
+elem1:40;elem2:294
+next addr:10000026
+addr:10000026
+elem1:8;elem2:546
+elem1:40;elem2:963
+elem1:23;elem2:489
+elem1:33;elem2:838
+elem1:5;elem2:436
+elem1:11;elem2:590
+elem1:18;elem2:162
+next addr:10000037
+addr:10000037
+elem1:13;elem2:644
+elem1:19;elem2:627
+elem1:22;elem2:270
+elem1:11;elem2:576
+elem1:3;elem2:971
+elem1:4;elem2:499
+elem1:2;elem2:604
+next addr:10000039
+addr:10000039
+elem1:11;elem2:102
+elem1:7;elem2:909
+elem1:27;elem2:411
+elem1:17;elem2:795
+elem1:24;elem2:225
+elem1:20;elem2:933
+elem1:15;elem2:549
+next addr:10000091
+addr:10000091
+elem1:3;elem2:348
+elem1:36;elem2:750
+elem1:25;elem2:29
+elem1:26;elem2:75
+elem1:12;elem2:608
+elem1:3;elem2:588
+elem1:40;elem2:475
+next addr:10000154
+addr:10000154
+elem1:30;elem2:764
+elem1:11;elem2:395
+elem1:16;elem2:593
+elem1:14;elem2:613
+elem1:10;elem2:398
+elem1:4;elem2:240
+elem1:24;elem2:367
+next addr:10000189
+addr:10000189
+elem1:33;elem2:647
+elem1:23;elem2:107
+elem1:33;elem2:720
+elem1:28;elem2:387
+elem1:29;elem2:547
+elem1:10;elem2:505
+elem1:26;elem2:565
+next addr:10000208
+addr:10000208
+elem1:39;elem2:757
+elem1:37;elem2:757
+elem1:12;elem2:994
+elem1:35;elem2:132
+elem1:24;elem2:530
+elem1:34;elem2:234
+elem1:36;elem2:979
+next addr:10000249
+addr:10000249
+elem1:4;elem2:385
+elem1:35;elem2:636
+elem1:23;elem2:177
+elem1:28;elem2:296
+elem1:27;elem2:243
+elem1:7;elem2:54
+elem1:30;elem2:266
+next addr:10000275
+addr:10000275
+elem1:15;elem2:940
+elem1:24;elem2:532
+elem1:10;elem2:910
+elem1:39;elem2:890
+elem1:34;elem2:144
+elem1:1;elem2:163
+elem1:35;elem2:8
+next addr:10000299
+addr:10000299
+elem1:1;elem2:22
+elem1:11;elem2:512
+elem1:33;elem2:979
+elem1:2;elem2:260
+elem1:29;elem2:94
+elem1:30;elem2:438
+elem1:39;elem2:989
+next addr:10000354
+addr:10000354
+elem1:35;elem2:329
+elem1:33;elem2:387
+elem1:30;elem2:659
+elem1:36;elem2:877
+elem1:36;elem2:965
+elem1:10;elem2:92
+elem1:8;elem2:709
+next addr:10000357
+addr:10000357
+elem1:22;elem2:824
+elem1:11;elem2:455
+elem1:37;elem2:280
+elem1:35;elem2:699
+elem1:24;elem2:349
+elem1:19;elem2:675
+elem1:37;elem2:949
+next addr:10000395
+addr:10000395
+elem1:16;elem2:390
+elem1:28;elem2:784
+elem1:4;elem2:273
+elem1:34;elem2:411
+elem1:20;elem2:548
+elem1:28;elem2:449
+elem1:14;elem2:681
+next addr:10000442
+addr:10000442
+elem1:35;elem2:850
+elem1:39;elem2:885
+elem1:1;elem2:798
+elem1:25;elem2:697
+elem1:3;elem2:308
+elem1:34;elem2:349
+elem1:40;elem2:703
+next addr:10000451
+addr:10000451
+elem1:6;elem2:964
+elem1:14;elem2:490
+elem1:14;elem2:823
+elem1:32;elem2:341
+elem1:34;elem2:868
+elem1:17;elem2:971
+elem1:5;elem2:696
+next addr:0
+
+# of IO's is 1

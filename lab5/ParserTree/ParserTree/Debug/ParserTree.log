@@ -1,0 +1,11 @@
+﻿  main.cpp
+c:\users\刘路\source\repos\parsertree\parsertree\main.cpp(26): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\刘路\source\repos\parsertree\parsertree\main.cpp(41): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\刘路\source\repos\parsertree\parsertree\main.cpp(59): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\刘路\source\repos\parsertree\parsertree\main.cpp(72): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\刘路\source\repos\parsertree\parsertree\main.cpp(164): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\刘路\source\repos\parsertree\parsertree\main.cpp(171): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\刘路\source\repos\parsertree\parsertree\main.cpp(190): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\刘路\source\repos\parsertree\parsertree\main.cpp(240): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\刘路\source\repos\parsertree\parsertree\main.cpp(346): warning C4018: “<”: 有符号/无符号不匹配
+  ParserTree.vcxproj -> C:\Users\刘路\source\repos\ParserTree\Debug\ParserTree.exe

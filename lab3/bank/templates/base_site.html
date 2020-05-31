@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ title }} | {{ site_title|default:_('VBANK 虚拟银行') }}
+{% endblock %}
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'vbank:index' %}">VBANK 虚拟银行</a></h1>
+{% endblock %}
+{% block usertools %}
+<div id="user-tools">
+    欢迎！,<strong>{{ request.session.username }}</strong>/
+    <a href="/vbank/changepass/">修改密码</a>/
+    <a href="/vbank/logout/">退出登陆</a>
+</div>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

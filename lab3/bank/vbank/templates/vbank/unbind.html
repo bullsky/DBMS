@@ -1,0 +1,63 @@
+{% extends "base_site.html" %}
+{% block responsive %}
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.15/css/jquery.dataTables.css">
+
+    <!-- jQuery -->
+    <script type="text/javascript" charset="utf8" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+    <!-- DataTables -->
+    <script type="text/javascript" charset="utf8"
+            src="http://cdn.datatables.net/1.10.15/js/jquery.dataTables.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#table_id_example').DataTable();
+        });
+    </script>
+{% endblock %}
+{% block breadcrumbs %}
+    <div class="breadcrumbs">
+        <a href="{% url 'vbank:home' %}">主页</a>
+        {% if title %} &rsaquo; {{ title }}{% endif %}>
+        <a href="/vbank/unbindcard/">解绑银行卡</a>
+        {% if title %} &rsaquo; {{ title }}{% endif %}
+    </div>
+{% endblock %}
+
+
+{% block content %}
+    {% if balance_list %}
+        <table id="table_id_example" class="display">
+            <tr>
+                <th>银行卡号</th>
+{#                <th>申请时间</th>#}
+{#                <th>颁发支行</th>#}
+{#                <th>卡类型</th>#}
+                <th>操作</th>
+            </tr>
+
+            {% for balance in balance_list %}
+                <tr>
+                    <td>{{ balance.card_num }}</td>
+{#                    <td>{{ balance.s }}</td>#}
+{#                    <td>#}
+{#                        {{ balance.regist_time }}#}
+{#                        {% if balance.card_type == 1 %}#}
+{#                        储蓄卡#}
+{#                        {% else %}#}
+{#                        信用卡#}
+{#                        {% endif %}#}
+{#                    </td>#}
+                    <td><a href="/vbank/unbind/?bankcard={{ balance.card_num }}">解除绑定</a></td>
+{#                    <td><a href="{% url 'vbank:unbind' balance.card_num %}">解除绑定</a></td>#}
+                </tr>
+            {% endfor %}
+        </table>
+
+    {% endif %}
+    {% if error %}
+        <script type="text/javascript">
+            alert("不能解除绑定银行卡！至少绑定一张银行卡！");
+        </script>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DBMSLab2:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/DBMSLab2_jar</output-path>
+    <root id="archive" name="DBMSLab2.jar">
+      <element id="module-output" name="DBMSLab2" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/mysql-connector-java-5.1.46.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
